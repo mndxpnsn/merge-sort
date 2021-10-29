@@ -49,17 +49,7 @@ void merge(std::vector<int>& arr, int i, int k, int j) {
 
 void merge_sort(std::vector<int>& arr, int i, int j) {
 
-    //Case two elements
-    if(j - i == 1) {
-        if(arr[i] > arr[j]) {
-            int dum = arr[i];
-            arr[i] = arr[j];
-            arr[j] = dum;
-        }
-    }
-    
-    //Case more than two elements being sorted
-    if(j - i > 1) {
+    if(j - i > 0) {
         int k = (i + j) / 2;
         merge_sort(arr, i, k);
         merge_sort(arr, k + 1, j);

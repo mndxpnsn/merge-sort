@@ -17,22 +17,20 @@ int main(int argc, const char * argv[]) {
     //Input size array
     int n = 9;
     
-    //Allocate space for input
-    std::vector<int> input;
-    
-    //Initialize input array with random data
+    //Initialize array of size n with random data
+    std::vector<int> array;
     for(int i = 0; i < n; ++i) {
         int val = rand() % n + 1;
-        input.push_back(val);
+        array.push_back(val);
     }
 
     //Perform merge sort
-    merge_sort_wrap(input);
+    merge_sort_wrap(array);
     
     //Print results
-    int size_inp = (int) input.size();
+    int size_inp = (int) array.size();
     for(int i = 0; i < size_inp; ++i) {
-        std::cout << input[i] << " ";
+        std::cout << array[i] << " ";
     }
     std::cout << std::endl;
     std::cout << "done" << std::endl;

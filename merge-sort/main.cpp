@@ -28,9 +28,7 @@ int main(int argc, const char * argv[]) {
     merge_sort_wrap(array);
     
     //Print results
-    for(int i : array) {
-        std::cout << i << " ";
-    }
+    for(int i : array) { std::cout << i << " "; }
     std::cout << std::endl;
     std::cout << "done" << std::endl;
     

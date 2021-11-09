@@ -28,9 +28,8 @@ int main(int argc, const char * argv[]) {
     merge_sort_wrap(array);
     
     //Print results
-    int size_inp = (int) array.size();
-    for(int i = 0; i < size_inp; ++i) {
-        std::cout << array[i] << " ";
+    for(int i : array) {
+        std::cout << i << " ";
     }
     std::cout << std::endl;
     std::cout << "done" << std::endl;

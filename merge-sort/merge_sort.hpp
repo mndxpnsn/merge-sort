@@ -8,7 +8,6 @@
 #ifndef merge_sort_hpp
 #define merge_sort_hpp
 
-#include <stdio.h>
 #include <vector>
 
 const int inf = 3e+8;

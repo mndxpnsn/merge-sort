@@ -5,9 +5,7 @@
 //  Created by mndx on 28/10/2021.
 //
 
-#include <cstdlib>
 #include <iostream>
-#include <time.h>
 #include <vector>
 
 #include "merge_sort.hpp"
@@ -19,10 +17,7 @@ int main(int argc, const char * argv[]) {
     
     //Initialize array of size n with random data
     std::vector<int> array;
-    for(int i = 0; i < n; ++i) {
-        int val = rand() % n + 1;
-        array.push_back(val);
-    }
+    for(int i = n - 1; i > -1; --i) { array.push_back(i); }
 
     //Perform merge sort
     merge_sort_wrap(array);
